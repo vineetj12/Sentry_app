@@ -7,7 +7,7 @@ const __dirname = path.dirname(__filename);
 
 dotenv.config({ path: path.resolve(__dirname, "../.env") });
 
-import { PrismaClient } from "./generated/prisma/index.js";
+import { PrismaClient } from "../dist/generated/prisma/index.js";
 
 export const prisma = new PrismaClient({
   datasources: {
